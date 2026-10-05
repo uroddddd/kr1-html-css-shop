@@ -12,10 +12,10 @@ FORMA — учебный многостраничный магазин базо�
 
 ## Репозиторий и публикация
 
-- Адрес для репозитория: https://github.com/uroddddd/kr1-html-css-shop
-- Адрес для GitHub Pages: https://uroddddd.github.io/kr1-html-css-shop/
+- Репозиторий: https://github.com/uroddddd/kr1-html-css-shop
+- GitHub Pages: https://uroddddd.github.io/kr1-html-css-shop/
 
-**Статус:** адреса подготовлены для публикации; наличие работающей публичной версии нужно подтвердить после загрузки проекта и включения GitHub Pages. Инструкция: [docs/PUBLISH.md](docs/PUBLISH.md).
+**Статус:** опубликовано через GitHub Pages. 5 октября 2026 года проверены публичная главная, переходы, размерное модальное окно и отправка тестовой формы. Инструкция дальнейшего обновления: [docs/PUBLISH.md](docs/PUBLISH.md).
 
 ## Просмотр проекта
 
