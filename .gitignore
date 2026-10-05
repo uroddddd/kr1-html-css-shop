@@ -1,0 +1,11 @@
+# Локальные и временные файлы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+node_modules/
