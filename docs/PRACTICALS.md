@@ -24,7 +24,7 @@
 | 5 | `feature/multi-page-navigation` | [PR #5](https://github.com/uroddddd/kr1-html-css-shop/pull/5) |
 | 6 | `feature/flex-grid-navigation` | [PR #6](https://github.com/uroddddd/kr1-html-css-shop/pull/6) |
 | 7 | `refactor/bem-css-classes` | [PR #7](https://github.com/uroddddd/kr1-html-css-shop/pull/7) |
-| 8 | `fix/kr1-final-check` | Финальный PR добавлен ниже после создания. |
+| 8 | `fix/kr1-final-check` | [PR #8](https://github.com/uroddddd/kr1-html-css-shop/pull/8) |
 
 Ветки содержат промежуточные снимки: в практике №2 JavaScript ещё отсутствует, к №3 появляется модальное окно, к №7 классы преобразованы в БЭМ. Старый дизайн сохранён архивной веткой. Контрольная работа №2 из второй части документа №8 в этот проект не входит.
 
