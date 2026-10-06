@@ -1,11 +1,11 @@
-# Локальные и временные файлы
+# Системные файлы
 .DS_Store
 Thumbs.db
-.idea/
+# Редактор
 .vscode/
-__pycache__/
-*.pyc
+# Временные файлы
 *.log
+*.tmp
+*.temp
 .env
 .env.*
-node_modules/
