@@ -3,61 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог товаров учебного интернет-магазина.">
-  <title>Каталог товаров — Магазин одежды WearShop</title>
+  <meta name="description" content="Карточки одежды, цены, категории и статический макет фильтров.">
+  <title>Каталог одежды — WearShop</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-  <div class="site-header__inner">
-    <a class="site-header__logo" href="index.html">WearShop</a>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-<li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li></ul>
-    </nav>
-  </div>
-</header>
-
-  <main>
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <span class="breadcrumbs__current">Каталог</span>
-    </nav>
-
-    <section class="section">
-      <h1>Каталог товаров</h1>
-      <p>
-        На этой странице представлен учебный каталог товаров.
-        В дальнейшем здесь будут добавлены фильтры, сортировка и более
-        подробные карточки.
-      </p>
-    </section>
-
-    <section class="catalog-layout">
-  <aside class="catalog-filters">
+<body id="top">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header"><div class="site-header__inner"><a class="site-header__logo" href="index.html">WearShop</a><nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav></div></header>
+<main id="main">
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__current" aria-current="page">Каталог</span></nav><section class="section"><h1>Каталог одежды</h1><p>Три модели для повседневного гардероба: база, трикотаж и деним.</p></section><div class="catalog-layout"><aside class="catalog-filters">
     <h2>Фильтры</h2>
 
-    <form class="filters-form" action="#" method="get">
+    <form class="filters-form" aria-describedby="filters-note" action="#" method="get">
       <fieldset>
         <legend>Категория</legend>
 
-        <label>
-          <input type="checkbox" name="category" value="all">
+        <label for="filter-all">
+          <input id="filter-all" type="checkbox" name="category" value="all">
           Все товары
         </label>
 
-        <label>
-          <input type="checkbox" name="category" value="popular">
+        <label for="filter-popular">
+          <input id="filter-popular" type="checkbox" name="category" value="popular">
           Популярные
         </label>
 
-        <label>
-          <input type="checkbox" name="category" value="new">
+        <label for="filter-new">
+          <input id="filter-new" type="checkbox" name="category" value="new">
           Новинки
         </label>
       </fieldset>
@@ -72,40 +45,102 @@
         <input id="price-to" name="price-to" type="number" min="0" placeholder="5000">
       </fieldset>
 
-      <button class="button" type="submit">Применить</button>
+      <button class="button button--primary" type="submit" disabled>Применить</button><p class="filters-form__hint" id="filters-note">Статический макет: фильтрация будет добавлена на следующем этапе изучения JavaScript.</p>
     </form>
-  </aside>
+  </aside><section class="catalog-products"><h2 class="section__title">Список товаров</h2><div class="products-grid"><article class="product-card product-card--featured"><span class="product-card__badge">Хит</span><img class="product-card__image" src="images/tshirt.svg" alt="Футболка базовая" width="480" height="460" loading="lazy"><p class="product-card__category">База</p><h3 class="product-card__title">Футболка базовая</h3><p class="product-card__description">Мягкая хлопковая футболка для повседневных образов.</p><p class="product-card__price">Цена: 1000 руб. </p><a class="product-card__details" href="product.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Футболка базовая">Заказать</button></article><article class="product-card product-card--new"><span class="product-card__badge">Новинка</span><img class="product-card__image" src="images/hoodie.svg" alt="Толстовка" width="480" height="460" loading="lazy"><p class="product-card__category">Трикотаж</p><h3 class="product-card__title">Толстовка</h3><p class="product-card__description">Свободная толстовка с капюшоном для прохладной погоды.</p><p class="product-card__price">Цена: 1500 руб. </p><a class="product-card__details" href="product-hoodie.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Толстовка">Заказать</button></article><article class="product-card product-card--discount"><span class="product-card__badge">Скидка</span><img class="product-card__image" src="images/jeans.svg" alt="Джинсы" width="480" height="460" loading="lazy"><p class="product-card__category">Деним</p><h3 class="product-card__title">Джинсы</h3><p class="product-card__description">Прямые джинсы из плотного хлопкового денима.</p><p class="product-card__price">Цена: 1800 руб. <del class="product-card__old-price">2000 руб.</del></p><a class="product-card__details" href="product-jeans.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Джинсы">Заказать</button></article></div></section></div>
+<p class="success-message" id="success-message" role="status" tabindex="-1" hidden>Форма успешно отправлена! Учебная демонстрация завершена: данные проверены в браузере, сервер не подключён.</p>
+</main>
+<footer class="site-footer" id="contacts"><div class="site-footer__inner"><p class="site-footer__title">WearShop — учебный магазин одежды</p><nav class="site-footer__nav" aria-label="Дополнительная навигация"><a href="index.html#advantages">Преимущества</a><a href="index.html#popular">Популярные товары</a><a href="index.html#contacts">Обратная связь</a><a href="delivery.html">Доставка</a><a href="sizes.html">Размеры и уход</a><a href="contacts.html#faq">Частые вопросы</a></nav><p>© 2026 Учебный проект · ЭФБО 04-25</p><p class="site-footer__note">Каталог демонстрационный. Реальные заказы не принимаются.</p></div></footer>
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title"><h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2><form class="order-form" id="order-form" aria-describedby="form-status" action="#" method="post" novalidate>
+    <input id="selected-product" name="selected-product" type="hidden">
+<p class="order-form__selection">Выбранный товар: <strong id="selected-product-name">Консультация</strong></p>
 
-  <section class="catalog-products">
-    <h2>Список товаров</h2>
-
-    <div class="products-grid">
-      <article class="product-card">
-        <h3 class="product-card__title">Футболка базовая</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 1000 руб.</p>
-        <a class="button button--primary product-card__details" href="index.html#popular">Подробнее</a>
-      </article>
-<article class="product-card">
-        <h3 class="product-card__title">Толстовка</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 1500 руб.</p>
-        <a class="button button--primary product-card__details" href="index.html#popular">Подробнее</a>
-      </article>
-<article class="product-card">
-        <h3 class="product-card__title">Джинсы</h3>
-        <p class="product-card__description">Краткое описание учебного товара.</p>
-        <p class="product-card__price">Цена: 2000 руб.</p>
-        <a class="button button--primary product-card__details" href="index.html#popular">Подробнее</a>
-      </article>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-name">Имя</label>
+      <input class="order-form__input"
+        id="order-name"
+        name="name"
+        type="text"
+        placeholder="Введите ваше имя" maxlength="80"
+        minlength="2"
+        autocomplete="given-name"
+        required
+      >
     </div>
-  </section>
-</section>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-  </footer>
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-email">E-mail</label>
+      <input class="order-form__input"
+        id="order-email"
+        name="email"
+        type="email"
+        placeholder="example@mail.ru" maxlength="120"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-phone">Телефон</label>
+      <input class="order-form__input"
+        id="order-phone" aria-describedby="phone-hint"
+        name="phone"
+        type="tel"
+        inputmode="tel"
+        placeholder="+7 (900) 000-00-00"
+        pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+        required
+      >
+      <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-date">Дата связи</label>
+      <input class="order-form__input"
+        id="order-date"
+        name="date"
+        type="date"
+      >
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-topic">Тема заявки</label>
+      <select class="order-form__select" id="order-topic" name="topic" required>
+        <option value="">Выберите тему</option>
+        <option value="product">Заказ товара</option>
+        <option value="consultation">Консультация</option>
+        <option value="delivery">Доставка</option>
+      </select>
+    </div>
+
+    <div class="order-form__field">
+      <label class="order-form__label" for="order-comment">Комментарий</label>
+      <textarea class="order-form__textarea"
+        id="order-comment"
+        name="comment"
+        rows="4" maxlength="1000"
+        placeholder="Укажите дополнительную информацию"
+      ></textarea>
+    </div>
+
+    <div class="order-form__field order-form__field--checkbox">
+      <label class="order-form__label" for="order-agreement">
+        <input class="order-form__checkbox"
+          id="order-agreement"
+          name="agreement"
+          type="checkbox"
+          required
+        >
+        Я согласен на обработку данных
+      </label>
+    </div>
+
+    <div class="order-form__field"><label class="order-form__label" for="order-size">Размер (если выбран товар)</label><select class="order-form__select" id="order-size" name="size"><option value="">Нужна помощь с выбором</option><option>S</option><option>M</option><option>L</option><option>XL</option></select><a href="sizes.html">Посмотреть размерную сетку</a></div><p class="order-form__hint" id="form-status">Учебная форма: используйте тестовые данные. Они проверяются в браузере, но не отправляются продавцу и не сохраняются.</p><div class="order-form__actions">
+      <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+      <button class="button button--primary" type="submit">Отправить заявку</button>
+    </div>
+  </form></dialog>
+<noscript><p class="section">Для открытия модального окна и учебной отправки формы включите JavaScript. Страницы, таблицы и ссылки доступны без него.</p></noscript>
+<a class="back-top" href="#top" aria-label="Вернуться наверх">↑</a>
 </body>
 </html>

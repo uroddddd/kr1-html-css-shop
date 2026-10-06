@@ -18,6 +18,10 @@ orderButtons.forEach((button) => {
 
     // Записываем название товара в скрытое поле формы.
     selectedProductInput.value = productName;
+    // Небольшая доработка: посетитель видит название, а не только hidden-поле.
+    document.getElementById('selected-product-name').textContent = productName;
+    document.getElementById('order-topic').value = productName === 'Консультация' ? 'consultation' : 'product';
+    successMessage.hidden = true;
 
     // Открываем модальное окно.
     orderDialog.showModal();
@@ -25,8 +29,8 @@ orderButtons.forEach((button) => {
 });
 
 // Закрываем модальное окно по кнопке «Закрыть».
-closeDialogButton.addEventListener('click', () => {
-  orderDialog.close();
+closeDialogButton?.addEventListener('click', () => {
+  orderDialog?.close();
 });
 
 // Получаем форму заявки.
@@ -70,5 +74,16 @@ orderForm.addEventListener('submit', (event) => {
   orderForm.reset();
 
   // Закрываем модальное окно.
-  orderDialog.close();
+  orderDialog?.close();
+  successMessage.focus();
+});
+
+// Доработка: при исправлении поля убираем устаревшую отметку ошибки.
+orderForm.addEventListener('input', (event) => {
+  if (event.target.willValidate && event.target.checkValidity()) {
+    event.target.removeAttribute('aria-invalid');
+  }
+});
+orderForm.addEventListener('reset', () => {
+  Array.from(orderForm.elements).forEach((element) => element.removeAttribute('aria-invalid'));
 });

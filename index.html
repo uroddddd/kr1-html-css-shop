@@ -3,90 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный магазин одежды WearShop: базовые вещи и форма заявки.">
-  <title>Магазин одежды WearShop</title>
+  <meta name="description" content="Учебный магазин одежды: футболки, толстовки и джинсы. Каталог и форма заявки.">
+  <title>Главная — WearShop</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
-<body>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="site-header__logo" href="index.html">WearShop</a>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-<li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li></ul>
-    </nav>
-  </div>
-</header>
-<main>
-<section class="hero">
-  <h1>Магазин одежды WearShop</h1>
-  <p>
-    Это стартовая страница учебного frontend-проекта.
-    В дальнейшем на её основе будет разработан многостраничный сайт
-    интернет-магазина или каталога услуг.
-  </p>
-  <a class="button" href="#popular">Перейти к товарам</a>
-</section>
-<section class="section" id="advantages">
-  <h2>Преимущества проекта</h2>
-
-  <ul class="advantages-list">
-    <li>понятная HTML-структура;</li>
-    <li>семантические блоки страницы;</li>
-    <li>подключение внешнего CSS-файла;</li>
-    <li>подготовка к разработке многостраничного сайта.</li>
-  </ul>
-</section>
-<section class="section" id="popular">
-  <h2>Популярные товары</h2>
-
-  <div class="products-grid">
-<article class="product-card">
-    <h3 class="product-card__title">Футболка базовая</h3>
-    <p class="product-card__description">Мягкая хлопковая футболка для повседневных образов.</p>
-    <p class="product-card__price">Цена: 1000 руб.</p>
-    <button class="button button--primary product-card__button" type="button" data-product="Футболка базовая">Заказать</button>
-  </article>
-
-  <article class="product-card">
-    <h3 class="product-card__title">Толстовка</h3>
-    <p class="product-card__description">Свободная толстовка с капюшоном для прохладной погоды.</p>
-    <p class="product-card__price">Цена: 1500 руб.</p>
-    <button class="button button--primary product-card__button" type="button" data-product="Толстовка">Заказать</button>
-  </article>
-
-  <article class="product-card">
-    <h3 class="product-card__title">Джинсы</h3>
-    <p class="product-card__description">Прямые джинсы из плотного хлопкового денима.</p>
-    <p class="product-card__price">Цена: 2000 руб.</p>
-    <button class="button button--primary product-card__button" type="button" data-product="Джинсы">Заказать</button>
-  </article>
-</div>
-</section>
-<aside class="aside-info">
-  <h2>Информация для студентов</h2>
-  <p>
-    На следующих практических занятиях этот проект будет расширяться:
-    появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-    БЭМ-структура и адаптивная версия сайта.
-  </p>
-</aside>
+<body id="top">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header"><div class="site-header__inner"><a class="site-header__logo" href="index.html">WearShop</a><nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav></div></header>
+<main id="main">
+<section class="hero"><p class="hero__eyebrow">Новая коллекция · Осень 2026</p><h1 class="hero__title">Магазин одежды WearShop</h1><p class="hero__text">Базовые вещи на каждый день. Выберите модель, сравните размеры и оставьте учебную заявку.</p><a class="button button--primary" href="#popular">Перейти к товарам</a><a class="button button--secondary" href="catalog.html">Открыть каталог</a></section><section class="section" id="advantages"><h2 class="section__title">Преимущества магазина</h2><ul class="advantages-list"><li>Состав и характеристики каждой модели указаны в карточке.</li><li>Размерная сетка помогает подобрать посадку.</li><li>Форма сразу проверяет обязательные поля и формат контактов.</li><li>Условия доставки собраны на отдельной странице.</li></ul></section><section class="section" id="popular"><h2 class="section__title">Популярные товары</h2><div class="products-grid"><article class="product-card product-card--featured"><span class="product-card__badge">Хит</span><img class="product-card__image" src="images/tshirt.svg" alt="Футболка базовая" width="480" height="460" loading="lazy"><p class="product-card__category">База</p><h3 class="product-card__title">Футболка базовая</h3><p class="product-card__description">Мягкая хлопковая футболка для повседневных образов.</p><p class="product-card__price">Цена: 1000 руб. </p><a class="product-card__details" href="product.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Футболка базовая">Заказать</button></article><article class="product-card product-card--new"><span class="product-card__badge">Новинка</span><img class="product-card__image" src="images/hoodie.svg" alt="Толстовка" width="480" height="460" loading="lazy"><p class="product-card__category">Трикотаж</p><h3 class="product-card__title">Толстовка</h3><p class="product-card__description">Свободная толстовка с капюшоном для прохладной погоды.</p><p class="product-card__price">Цена: 1500 руб. </p><a class="product-card__details" href="product-hoodie.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Толстовка">Заказать</button></article><article class="product-card product-card--discount"><span class="product-card__badge">Скидка</span><img class="product-card__image" src="images/jeans.svg" alt="Джинсы" width="480" height="460" loading="lazy"><p class="product-card__category">Деним</p><h3 class="product-card__title">Джинсы</h3><p class="product-card__description">Прямые джинсы из плотного хлопкового денима.</p><p class="product-card__price">Цена: 1800 руб. <del class="product-card__old-price">2000 руб.</del></p><a class="product-card__details" href="product-jeans.html">Подробнее</a><button class="button button--primary product-card__button" type="button" data-product="Джинсы">Заказать</button></article></div></section><aside class="aside-info"><h2>Поможем с выбором</h2><p>Посмотрите <a href="sizes.html">размерную сетку</a> и <a href="delivery.html">условия доставки</a>. Если остались вопросы, выберите тему «Консультация» в форме заявки.</p><a class="button button--secondary" href="order.html">Перейти к заявке</a></aside>
+<p class="success-message" id="success-message" role="status" tabindex="-1" hidden>Форма успешно отправлена! Учебная демонстрация завершена: данные проверены в браузере, сервер не подключён.</p>
 </main>
-<footer class="site-footer" id="contacts">
-  <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-  <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-</footer>
-<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-  <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
-
-  <form class="order-form" id="order-form" action="#" method="post" novalidate>
+<footer class="site-footer" id="contacts"><div class="site-footer__inner"><p class="site-footer__title">WearShop — учебный магазин одежды</p><nav class="site-footer__nav" aria-label="Дополнительная навигация"><a href="index.html#advantages">Преимущества</a><a href="index.html#popular">Популярные товары</a><a href="index.html#contacts">Обратная связь</a><a href="delivery.html">Доставка</a><a href="sizes.html">Размеры и уход</a><a href="contacts.html#faq">Частые вопросы</a></nav><p>© 2026 Учебный проект · ЭФБО 04-25</p><p class="site-footer__note">Каталог демонстрационный. Реальные заказы не принимаются.</p></div></footer>
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title"><h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2><form class="order-form" id="order-form" aria-describedby="form-status" action="#" method="post" novalidate>
     <input id="selected-product" name="selected-product" type="hidden">
+<p class="order-form__selection">Выбранный товар: <strong id="selected-product-name">Консультация</strong></p>
 
     <div class="order-form__field">
       <label class="order-form__label" for="order-name">Имя</label>
@@ -94,7 +26,7 @@
         id="order-name"
         name="name"
         type="text"
-        placeholder="Введите ваше имя"
+        placeholder="Введите ваше имя" maxlength="80"
         minlength="2"
         autocomplete="given-name"
         required
@@ -107,7 +39,7 @@
         id="order-email"
         name="email"
         type="email"
-        placeholder="example@mail.ru"
+        placeholder="example@mail.ru" maxlength="120"
         autocomplete="email"
         required
       >
@@ -116,7 +48,7 @@
     <div class="order-form__field">
       <label class="order-form__label" for="order-phone">Телефон</label>
       <input class="order-form__input"
-        id="order-phone"
+        id="order-phone" aria-describedby="phone-hint"
         name="phone"
         type="tel"
         inputmode="tel"
@@ -124,7 +56,7 @@
         pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
         required
       >
-      <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      <small class="order-form__hint" id="phone-hint">Формат: +7 (900) 000-00-00</small>
     </div>
 
     <div class="order-form__field">
@@ -151,13 +83,13 @@
       <textarea class="order-form__textarea"
         id="order-comment"
         name="comment"
-        rows="4"
+        rows="4" maxlength="1000"
         placeholder="Укажите дополнительную информацию"
       ></textarea>
     </div>
 
     <div class="order-form__field order-form__field--checkbox">
-      <label class="order-form__label">
+      <label class="order-form__label" for="order-agreement">
         <input class="order-form__checkbox"
           id="order-agreement"
           name="agreement"
@@ -168,14 +100,12 @@
       </label>
     </div>
 
-    <div class="order-form__actions">
+    <div class="order-form__field"><label class="order-form__label" for="order-size">Размер (если выбран товар)</label><select class="order-form__select" id="order-size" name="size"><option value="">Нужна помощь с выбором</option><option>S</option><option>M</option><option>L</option><option>XL</option></select><a href="sizes.html">Посмотреть размерную сетку</a></div><p class="order-form__hint" id="form-status">Учебная форма: используйте тестовые данные. Они проверяются в браузере, но не отправляются продавцу и не сохраняются.</p><div class="order-form__actions">
       <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
       <button class="button button--primary" type="submit">Отправить заявку</button>
     </div>
-  </form>
-</dialog>
-<p class="success-message" id="success-message" hidden>
-  Форма успешно отправлена!
-</p>
+  </form></dialog>
+<noscript><p class="section">Для открытия модального окна и учебной отправки формы включите JavaScript. Страницы, таблицы и ссылки доступны без него.</p></noscript>
+<a class="back-top" href="#top" aria-label="Вернуться наверх">↑</a>
 </body>
 </html>
